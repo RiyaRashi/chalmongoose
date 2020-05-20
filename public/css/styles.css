@@ -6,7 +6,15 @@ background-image: linear-gradient(to right, pink , purple);
      margin:0;
      padding:0;
      overflow:auto;
+     padding-bottom:0;
+
+
+   /* Height of the footer */
 }
+#abv{
+  padding-top: 100%;
+}
+
 .container-fluid {
 
     padding-top: 70px;
