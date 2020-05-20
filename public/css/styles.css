@@ -2,6 +2,10 @@ body {
 background-image: linear-gradient(to right, pink , purple);
   background-color: red; /* For browsers that do not support gradients */
  /* Standard syntax (must be last) */
+ position:relative;
+     margin:0;
+     padding:0;
+     overflow:auto;
 }
 .container-fluid {
 
@@ -23,21 +27,24 @@ background-image: linear-gradient(to right, pink , purple);
 }
 
 .footer-padding {
-	padding-bottom: 100px;
+	padding-bottom: 10px;
 }
 
 .footer {
   background-image: linear-gradient(to right, lightblue , lightgreen);
-	position: absolute;
-	text-align: center;
-	bottom: 0;
-	width: 100%;
-	height: 50px;
+  position: relative; <!-- HERE -->
+   width: 100%;
+   bottom: 0;
+   color: white;
+
+   font-size: 15px;
+text-align: center;
+  	height: 50px;
 	background-color: #1abc9c;
 }
 
 .footer p {
 	margin-top: 25px;
-	font-size: 12px;
+	font-size: 15px;
   color: #fff;
 }

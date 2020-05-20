@@ -72,6 +72,10 @@ app.get("/about", function(req, res){
 app.get("/contact", function(req, res){
   res.render("contact", {contactContent: contactContent});
 });
+
+app.post("/create",function(req,res){
+  res.redirect("/compose");
+});
 let port =process.env.PORT;
 if(port == null || port==""){
   port=3000;
